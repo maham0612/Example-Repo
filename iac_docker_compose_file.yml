@@ -11,7 +11,7 @@ services:
     hostname: iac_website
     container_name: iac_website
     volumes: 
-    - iac_data:/opt/volume
+    - iac_data:/opt/app
 volumes:
   iac_data:
   
