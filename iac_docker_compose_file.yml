@@ -11,6 +11,8 @@ services:
     hostname: iac_website
     container_name: iac_website
     volumes: 
-    - /home/maham/volume:/opt/volume
-
+    - iac_data:/opt/volume
+volumes:
+  iac_data:
+  
 
