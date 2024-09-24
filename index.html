@@ -1,5 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign In or Sign Up</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #f4f4f4;
+    }
+    .button-container {
+      text-align: center;
+    }
+    .btn {
+      padding: 10px 20px;
+      margin: 10px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+    .btn-signin {
+      background-color: #4CAF50;
+      color: white;
+    }
+    .btn-signup {
+      background-color: #008CBA;
+      color: white;
+    }
+    .btn:hover {
+      opacity: 0.8;
+    }
+  </style>
+</head>
+<body>
 <h1> Welcome to IAC website</h1>
-<li>Home</li>
-<li>About</li>
-<li>Contact Us</li>
-<li>Login</li>
+<div class="button-container">
+  <button class="btn btn-signin" onclick="signIn()">Sign In</button>
+  <button class="btn btn-signup" onclick="signUp()">Sign Up</button>
+</div>
+
+<script>
+  function signIn() {
+    // Redirect to the sign-in page (Replace with actual URL)
+    window.location.href = "signin.html";
+  }
+
+  function signUp() {
+    // Redirect to the sign-up page (Replace with actual URL)
+    window.location.href = "signup.html";
+  }
+</script>
+
+</body>
+</html>
