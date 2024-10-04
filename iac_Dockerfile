@@ -12,6 +12,8 @@ ADD https://github.com/maham0612/iac_website.git /opt/app
 
 RUN cp ./index.html /var/www/html
 
+RUN cp ./styles.css /var/www/html
+
 COPY ./iac_text_file /opt/app
 
 ENTRYPOINT ["/usr/sbin/nginx"]
